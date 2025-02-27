@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfólio - DevClub</title>
+</head>
+
+<body>
+
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Inicio</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contato" class="menu-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="./img/perfil.jpg" alt="Foto de Álvaro Souza" class="foto-perfil">
+        <h1>Álvaro Souza</h1>
+        <p class="cabecalho-sub-titulo">Desenvolvedor Front-end</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">Atualmente, estou em transição de carreira para a área de tecnologia, estudando
+                Desenvolvimento FullStack na formação
+                DevClub. Meu objetivo é evoluir continuamente na área, adquirindo experiência prática e conhecimento
+                técnico para me tornar um Desenvolvedor Sênior no futuro.
+                A mesma dedicação e comprometimento que marcaram minha carreira na segurança, levo agora para o
+                desenvolvimento de software, sempre buscando aprimoramento e inovação.</p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+
+            <div class="projetos-card">
+                <img src="./img/portfolio.png" alt="Portfólio" class="projetos-img">
+
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Portfólio</h3>
+                    <p class="paragrafo-projetos">Portfólio Web – Desenvolvido com HTML, CSS e JavaScript, este site
+                        apresenta meus projetos, habilidades e informações de
+                        contato de forma moderna e responsiva. Utiliza Flexbox e Grid para o layout, além de efeitos
+                        visuais e interatividade
+                        com JavaScript puro. O design foi inspirado em boas práticas de UI/UX, garantindo uma
+                        navegação fluida e intuitiva.</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/DevBurguer.png" alt="Web Dev Burguer" class="projetos-img">
+
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Web Dev Burguer</h3>
+                    <p class="paragrafo-projetos">O Web Dev Burguer é um site que Desenvolvi para aprimorar minhas
+                        habilidades em desenvolvimento web, focando em HTML,
+                        CSS, JavaScript e boas práticas de UI/UX.
+                        Neste projeto, criei uma interface intuitiva e funcional para pedidos de hambúrgueres
+                        online. A interface inclui botões
+                        para mostrar todos os itens, mapear preços e até filtrar os resultados de acordo com a
+                        preferência do usuário. Além
+                        disso, cada item do menu está detalhado com preços e descrições visíveis.</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/DevMovies.png" alt="DevMovies" class="projetos-img">
+
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">DevMoveis</h3>
+                    <p class="paragrafo-projetos">DevMoveis - Aplicação web desenvolvida em React que utiliza a API
+                        do The Movie Database (TMDb) para exibir informações sobre filmes. O projeto destaca
+                        conceitos como consumo de APIs REST, manipulação de estados
+                        no React e roteamento com React Router. Além disso, foram utilizadas bibliotecas como Axios
+                        para requisições HTTP e
+                        Styled Components para estilização da interface.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+
+        <form class="formulario-contato" id="formulario" onsubmit="enviarwhats(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="6" id="mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn-form">Enviar Whatsapp</button>
+        </form>
+
+    </section>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
